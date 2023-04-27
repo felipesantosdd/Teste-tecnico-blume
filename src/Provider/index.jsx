@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { weatherForecastRequest } from "../Services/get";
+import { Alert } from "../Components/alert";
 
 export const Context = createContext({})
 
@@ -16,6 +17,7 @@ export function Provider({ children }) {
             console.log(response.data)
             setCity(response.data)
         } catch (error) {
+            Alert()
             console.error(error)
         }
     }
