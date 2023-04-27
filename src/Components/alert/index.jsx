@@ -4,9 +4,9 @@ export function Alert() {
 
     return (
         Swal.fire({
-            title: 'Erro!',
+            title: 'Algo deu errado!',
             color: 'white',
-            text: 'Algo deu errado. Verifique o nome da cidade e tente novamente.',
+            text: 'Verifique o nome da cidade e tente novamente.',
             icon: 'error',
             confirmButtonText: 'Ok',
             background: '#282C34'
