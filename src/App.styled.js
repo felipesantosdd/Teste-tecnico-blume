@@ -8,4 +8,5 @@ export const Body = styled.div`
   flex-direction: column;
   align-items: center;
   color: white;
+  min-width: 100vw;
 `
